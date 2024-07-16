@@ -8,13 +8,13 @@ function App() {
       <section>
         <h2>Why Work With Us?</h2>
         <Accordion className="accordion">
-          <AccordionItem title="Unbeatable Prices" className="accordion-item" >
+          <AccordionItem id="experience" title="Unbeatable Prices" className="accordion-item" >
             <article>
               <p>Our prices are the best in the industry.</p>
               <p>Great guides, great location</p>
             </article>
           </AccordionItem>
-          <AccordionItem title="Great reviews" className="accordion-item" >
+          <AccordionItem  id="local-guides" title="Great reviews" className="accordion-item" >
             <article>
               <p>Our customers love us!</p>
               <p>Great guides, great location</p>
