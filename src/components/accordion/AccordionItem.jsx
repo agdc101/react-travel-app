@@ -1,5 +1,19 @@
 import React from 'react';
 import { useAccordionContext } from './Accordion';
+import { createContext, useContext } from 'react';
+
+const AccordionItemContext = createContext();
+
+export function useAccordionItemContext() {
+    const ctx = useContext(AccordionItemContext);
+
+    if (!ctx) {
+        throw new Error("useAccordionItem must be used within an AccordionItem component");
+    }
+
+    return ctx;
+}
+
 
 export default function AccordionItem({ id, children, title, className }) {
 
